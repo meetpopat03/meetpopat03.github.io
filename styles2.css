@@ -1,0 +1,332 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+::selection{
+	 background-color: #73248b;
+	}
+body{
+	font-family: 'New Tegomin', serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	min-height: 100vh;
+	background: #010615;
+	}
+
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+
+
+
+.close {
+  /*position: absolute;*/
+  /*right: 35px;
+  top: 15px;
+  */font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* The modal1 (background) */
+.modal1 {
+
+display:none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+/* modal1 Content/Box */
+.modal1-content {
+ 
+    background-color: #fefefe;
+    margin: 4% auto 15% auto;
+    border: 1px solid #888;
+    width: 40%; 
+padding-bottom: 30px;
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+
+
+
+	 .box{
+        position: relative;
+        height: 300px; 
+        width:300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 40px;
+        background: #060c21;
+        transition: 0.5s;
+
+	    }
+
+.box:hover
+{
+	height: 400px;
+}
+
+
+.box .imgbx
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 10%;
+	height: 10%;
+	padding: 10px;
+	box-sizing: border-box;
+}	     
+
+
+.box .imgbx img
+{
+	max-width: 10%;
+	opacity: 0.1;
+	transition: 0.5s;
+}
+
+
+.box:hover .imgbx img
+{
+	opacity: 1;
+
+}
+.box:before
+{
+	content: '';
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	right: -2px;
+	bottom: -2px;
+	background: #fff;
+	z-index: -1; 
+}
+.box:after
+{
+	content: '';
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	right: -2px;
+	bottom: -2px;
+	background: #fff;
+	z-index: -2;
+	filter: blur(40px); 
+}
+
+.box:before,
+.box:after
+{
+	background: linear-gradient(235deg,#89ff00,#010615,#00bcd4); 
+}
+
+.box1:before,
+.box1:after
+{
+	background: linear-gradient(235deg,#ff005e,#010615,#fbff00);
+}
+
+.box2:before,
+.box2:after
+{
+	background: linear-gradient(235deg,#772aff,#010615,#2196F3);
+}
+
+select {
+      font-family: Arial, sans-serif;
+      font-size: 20px;
+      font-style: italic;
+    }
+/*
+
+.box:nth-child(2):before,
+.box:nth-child(2):after
+{
+	background: linear-gradient(235deg,#ff005e,#010615,#fbff00); 
+}
+
+.box:nth-child(3):before,
+.box:nth-child(3):after
+{
+	background: linear-gradient(235deg,#772aff,#010615,#2196F3); 
+}
+*/
+.box .content
+{
+	position: absolute;
+	bottom: 0px;
+	left: 10px;
+	right: 10px;
+	bottom: 10px;
+	height: 90px;
+	background: rgba(0,0,0,0.4);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+	transition: 0.5s;
+
+
+}
+.box:hover .content
+{
+	opacity: 1;
+	transition: 0..5s;
+
+}
+.box .content h2
+{
+	font-size: 20px;
+	color: #fff;
+	font-weight: 500;
+	line-height: 20px;
+	letter-spacing: 1px;
+}
+.box .content h2 span
+{
+	font-size: 14px;
+	color: #fff;
+	font-weight: 200;
+	letter-spacing: 2px;
+}
+.banner
+{
+	position: relative;
+	width: 100%;
+	height: 10vh;
+	background: #010615;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.banner .content
+{
+	
+	text-align: center;
+}
+.banner .h2
+{
+	color: #ffffff;
+	font-size: 30px;
+
+}
+
+.banner .h2 p
+{
+	color: rgb(200,25,32);
+	font-size: 15px;
+}
+.banner header
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 40px 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 10000;
+	opacity: 0.25;
+
+}
+
+
+.footer 
+{
+	text-align: center;
+	width: 100%;
+	margin:1% auto;
+	background-color: white;
+	font-size: 26px;
+	opacity: 0.3;
+}
+.footer:hover
+{
+	opacity: 0.8;
+}
+.footer img
+{
+	
+	max-width: 100px;
+	max-height: 100px;
+}

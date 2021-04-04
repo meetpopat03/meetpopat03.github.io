@@ -1,0 +1,2033 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name = "viewport" content="width=device-width, initial-scales=1.0"/>
+
+<title>
+Plutonic
+</title>
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="styles2.css"/>
+
+</head>
+
+
+
+<body>
+  <br><br>
+<marquee behaviour="alternate"  bgcolor="white" style="font-size: 20px;"  >CSEA Computer Science and Engineering Association, NooBathon 2021, NIT Warangal </marquee>
+
+<!-- 
+<button onclick="document.getElementById('id01').style.display='block'" style="width:100px; margin-left:-100px;">SIGNUP</button>
+<button onclick="document.getElementById('modal-wrapper').style.display='block'" style="width:100px; margin-left:-20px;">
+LOGIN</button>
+ -->
+
+
+
+
+
+
+
+
+<div id="id01" class="modal1">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close modal1">&times;</span>
+  <form class="modal1-content" action="/action_page.php">
+    <div class="container">
+      <h1>Sign Up</h1>
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'">Cancel</button>
+        <button type="submit" >Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal1
+var modal1 = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal1, close it
+window.onclick = function(event) {
+  if (event.target == modal1) {
+    modal1.style.display = "none";
+  }
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="toggle"></p></div>
+
+<div class="box">
+<div class="imgBx">
+<img src="./portrait1.jpg" width="200" height="250">
+</div>
+ <div class="content">
+  <h2>Rohit Gorle<br><span>Creative Developer</span><br><a href=" ">Read about</a></h2>
+ </div>
+</div>
+
+<div class="box box1">
+<div class="imgBx">
+<img src="portrait2.jpg" width="200" height="250">
+</div>
+ <div class="content">
+  <h2>Sufiyan Ansari<br><span>Assistant Developer</span><br><a href=" ">Read about</a></h2>
+ </div>
+</div>
+
+<div class="box box2">
+<div class="imgBx">
+<img src="portrait3.jpg" width="200" height="250">
+</div>
+ <div class="content">
+  <h2>Satvik Yandapalli<br><span>Creative Developer</span><br><a href=" ">Read about</a></h2>
+ </div>
+</div>
+<br>
+
+<div class="banner">
+<header>
+<a href="#" class="logo">Brand and Name</a>
+<div class="toggle"></div>
+</header>
+<div class="content">
+    <br>
+  <h1 style="color:blue">NITW DEVELOPER COLLABORATOR</h1>
+
+<p style="color:white; font-size: 20px "> NIT Warangal is brimming with developers and in search of team mates with matching
+skill-set and experience Here are we to see the list of developers with same interest.The website should be able to show a user page containing all the information of a particular user. </p><br><br>
+</div>
+</div>
+
+<style>
+*{margin:0px; padding:0px; font-family:Helvetica, Arial, sans-serif;}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 26px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+font-size:16px;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 26px;
+    border: none;
+    cursor: pointer;
+    width: 90%;
+font-size:20px;
+}
+button:hover {
+    opacity: 0.8;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+.avatar {
+    width: 200px;
+height:200px;
+    border-radius: 50%;
+}
+
+/* The Modal (background) */
+.modal {
+display:none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+/* Modal Content Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 4% auto 15% auto;
+    border: 1px solid #888;
+    width: 40%; 
+padding-bottom: 30px;
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+.close:hover,.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    animation: zoom 0.6s
+}
+@keyframes zoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+</style>
+</style>
+<body background="../background1.png">
+<br><br><br>
+<h4 style="text-align:center; font-size:25px; color:#fff">Login Here after getting credential</h4>
+<br><br><br>
+<button onclick="document.getElementById('modal-wrapper').style.display='block'" style="width:100px; margin-left:20px;">
+LOGIN</button>
+
+<div id="modal-wrapper" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php">
+        
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('modal-wrapper').style.display='none'" class="close" title="Close PopUp">&times;</span>
+      <img src="1.png" alt="Avatar" class="avatar">
+      <h1 style="text-align:center">CSEA NITW LOGIN</h1>
+    </div>
+
+    <div class="container">
+      <input type="text" placeholder="Enter Username" name="uname">
+      <input type="password" placeholder="Enter Password" name="psw">        
+      <button type="submit">Login</button>
+      <input type="checkbox" style="margin:26px 30px;"> Remember me      
+      <a href="#" style="text-decoration:none; float:right; margin-right:34px; margin-top:26px;">Forgot Password ?</a>
+    </div>
+    
+  </form>
+  
+</div>
+
+<script>
+// If user clicks anywhere outside of the modal, Modal will close
+
+var modal = document.getElementById('modal-wrapper');
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+<style>
+  p.ex1 {
+  /*margin: 35px;*/
+  margin-left: 15px;
+  margin-right: 15px;
+}
+</style>
+<br><br><br>
+<div>
+  <br><br>
+<p style="color: white;font-size: 20px ;text-align: center";>As we all know NIT Warangal is brimming with developers looking for perfect team to participate in team contest. Our team is here to solve the problem by providing them a platform to find team mates with matching skill-set and experience.Our website lets the authenticated user to see the list of developers with same interest as the user.</p><br></div>
+
+<form action="/action_page.php">
+  <label for="developer" style="color: white;">Select developer of your interest : </label>
+  <select id="developers" style="margin-right: 150px;">
+    <!-- <select style="width:2000px;"> -->
+    <option>Select</option>
+     <option value="1">Full Stack</option>
+    <option value="2">Web</option>
+    <option value="3">Mobile</option>
+   <option value="4">Game</option>
+   <option value="5">Data Scientist</option>
+    <option value="6">Security</option>
+
+  </select>
+  <br><br><br>
+  
+</form>
+
+<div id="1" style="display: none;">
+  <h1 style="color:white;text-align: center;">Full Stack Developers</h1>
+  <br>
+  <br>
+ <p style="color:white"; class="ex1" ;font-size: 20px >A full stack developer does both the front end and back end work for a site. They have the skills which are required to create a fully functioning website. Being a full stack developer will open up more opportunities for yourself as they work on both the server side and client side. The skills a full stack developer would consist of a combination of a front end and back end developer. A full stack developer should be able to set up Linux servers, write server-side APIs, client-side JavaScript powering an application and turn a design eye to CSS.</p>
+
+<ul>
+  <li>
+    <style>
+@import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
+
+*{
+  margin :0;
+  padding:0;
+}
+
+.body {
+  margin-top:8%;
+    justify-content: center;
+    align-items: center;
+    background-color:   #9932CC;
+    height: 400px;
+    display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-family: sans-serif;
+  overflow: hidden;
+}
+
+.flip-card {
+    background-color: powderblue;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+
+}
+
+.flip-card-inner {
+  position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color:  powderblue;
+  color: black;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.flip-card-back {
+  display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+    background-color: #ebe713;
+    color: #9932cc;
+    transform: rotateY(180deg);
+}
+</style>
+<div class="body">
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <h1>NAME, PHOTO</h1>
+      <p>hover here</p>
+    </div>
+    <div class="flip-card-back">
+      <h1> NITW </h1>
+      <p>Bachelor Of Technology - BTECH,Computer Science Engineering</p>
+      <p style="color:blue">FULL STACK DEVELOPER</p>
+      <h3>CONTACT</h3>
+      <p><a href="https://www.Linkedin">Linkedin Profile</a></p>
+      <p><a href="https://www.email">Email</a></p>
+      <button class="btn btn-primary">Experience and Projects</button>
+    </div>
+  </div>
+</div>
+</div>
+  </li>
+  <li>
+    <style>
+@import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
+
+*{
+  margin :0;
+  padding:0;
+}
+
+.body {
+  margin-top:8%;
+    justify-content: center;
+    align-items: center;
+    background-color: #1d287e;
+    height: 400px;
+    display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-family: sans-serif;
+  overflow: hidden;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+
+}
+
+.flip-card-inner {
+  position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #f6fb30;
+  color: black;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.flip-card-back {
+  display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+    background-color: #f6fb30;
+    color: #9932cc;
+    transform: rotateY(180deg);
+}
+</style>
+<div class="body">
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <h1>NAME, PHOTO</h1>
+      <p>hover here</p>
+    </div>
+    <div class="flip-card-back">
+      <h1> NITW </h1>
+      <p>Bachelor Of Technology - BTECH,Computer Science Engineering</p>
+      <p style="color:blue">FULL STACK DEVELOPER</p>
+      <h3>CONTACT</h3>
+      <p><a href="https://www.Linkedin">Linkedin Profile</a></p>
+      <p><a href="https://www.email">Email</a></p>
+      <button class="btn btn-primary">Experience and Projects</button>
+    </div>
+  </div>
+</div>
+</div>
+  </li>
+  <li>
+        <style>
+@import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
+
+*{
+  margin :0;
+  padding:0;
+}
+
+.body {
+  margin-top:8%;
+    justify-content: center;
+    align-items: center;
+    background-color: #1d287e;
+    height: 400px;
+    display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-family: sans-serif;
+  overflow: hidden;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+
+}
+
+.flip-card-inner {
+  position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #f6fb30;
+  color: black;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.flip-card-back {
+  display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+    background-color: #f6fb30;
+    color: #9932cc;
+    transform: rotateY(180deg);
+}
+</style>
+<div class="body">
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <h1>NAME, PHOTO</h1>
+      <p>hover here</p>
+    </div>
+    <div class="flip-card-back">
+      <h1> NITW </h1>
+      <p>Bachelor Of Technology - BTECH,Computer Science Engineering</p>
+      <p style="color:blue">FULL STACK DEVELOPER</p>
+      <h3>CONTACT</h3>
+      <p><a href="https://www.Linkedin">Linkedin Profile</a></p>
+      <p><a href="https://www.email">Email</a></p>
+      <button class="btn btn-primary">Experience and Projects</button>
+    </div>
+  </div>
+</div>
+</div>
+  </li>
+</ul>  
+</div>
+
+<div id="2" style="display: none;">
+  <h1 style="color:white;text-align: center;">Web Developers</h1>
+  <br> <br>
+ <p style="color:white;style=color:yellow;class=ex1;text-align: center;">Web developers have a similar job to software developers; however they specialise in creating websites. Although they haven’t been around for as long as some other developers and they only required to have a basic knowledge when entering the role, web developers are increasing just as much as other developers in today’s world. Web developers are required to have knowledge on HTML, CSS, FTP, JavaScript and WordPress.</p>
+
+<ul>
+  <li>
+    <style>
+@import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
+
+*{
+  margin :0;
+  padding:0;
+}
+
+.body {
+  margin-top:8%;
+    justify-content: center;
+    align-items: center;
+    background-color: #1d287e;
+    height: 400px;
+    display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-family: sans-serif;
+  overflow: hidden;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+
+}
+
+.flip-card-inner {
+  position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #f6fb30;
+  color: black;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.flip-card-back {
+  display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+    background-color: #f6fb30;
+    color: #9932cc;
+    transform: rotateY(180deg);
+}
+</style>
+<div class="body">
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <h1>NAME, PHOTO</h1>
+      <p>hover here</p>
+    </div>
+    <div class="flip-card-back">
+      <h1> NITW </h1>
+      <p>Bachelor Of Technology - BTECH,Computer Science Engineering</p>
+      <p style="color:blue">WEB DEVELOPER</p>
+      <h3>CONTACT</h3>
+      <p><a href="https://www.Linkedin">Linkedin Profile</a></p>
+      <p><a href="https://www.email">Email</a></p>
+      <button class="btn btn-primary">Experience and Projects</button>
+    </div>
+  </div>
+</div>
+</div>
+  </li>
+  <li>
+    <style>
+@import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
+
+*{
+  margin :0;
+  padding:0;
+}
+
+.body {
+  margin-top:8%;
+    justify-content: center;
+    align-items: center;
+    background-color: #1d287e;
+    height: 400px;
+    display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-family: sans-serif;
+  overflow: hidden;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+
+}
+
+.flip-card-inner {
+  position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #f6fb30;
+  color: black;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.flip-card-back {
+  display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+    background-color: #f6fb30;
+    color: #9932cc;
+    transform: rotateY(180deg);
+}
+</style>
+<div class="body">
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <h1>NAME, PHOTO</h1>
+      <p>hover here</p>
+    </div>
+    <div class="flip-card-back">
+      <h1> NITW </h1>
+      <p>Bachelor Of Technology - BTECH,Computer Science Engineering</p>
+      <p style="color:blue">WEB DEVELOPER</p>
+      <h3>CONTACT</h3>
+      <p><a href="https://www.Linkedin">Linkedin Profile</a></p>
+      <p><a href="https://www.email">Email</a></p>
+      <button class="btn btn-primary">Experience and Projects</button>
+    </div>
+  </div>
+</div>
+</div>
+  </li>
+  <li>
+    <style>
+@import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
+
+*{
+  margin :0;
+  padding:0;
+}
+
+.body {
+  margin-top:8%;
+    justify-content: center;
+    align-items: center;
+    background-color: #1d287e;
+    height: 400px;
+    display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-family: sans-serif;
+  overflow: hidden;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+
+}
+
+.flip-card-inner {
+  position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #f6fb30;
+  color: black;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.flip-card-back {
+  display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+    background-color: #f6fb30;
+    color: #9932cc;
+    transform: rotateY(180deg);
+}
+</style>
+<div class="body">
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <h1>NAME, PHOTO</h1>
+      <p>hover here</p>
+    </div>
+    <div class="flip-card-back">
+      <h1> NITW </h1>
+      <p>Bachelor Of Technology - BTECH,Computer Science Engineering</p>
+      <p style="color:blue">WEB DEVELOPER</p>
+      <h3>CONTACT</h3>
+      <p><a href="https://www.Linkedin">Linkedin Profile</a></p>
+      <p><a href="https://www.email">Email</a></p>
+      <button class="btn btn-primary">Experience and Projects</button>
+    </div>
+  </div>
+</div>
+</div>
+  </li>
+</ul>  
+</div>
+
+<div id="3" style="display: none;">
+  <h1 style="color:white; text-align: center;";>Mobile Developers</h1>
+   <br> <br>
+ <p style="color:white;style="color:yellow;class="ex1" style="text-align:center">Mobile developers write codes for applications that run on mobile devices such as tablets and smartphones. Mobile developers only started to become popular after the boom of mobile devices in the early 2000s and the growth of the smartphone market. A mobile developer understands mobile operating systems such as iOS and android and the environment and frameworks used to create software on these systems. They have a variety of development skills, such as Java, Swift, Objective-C, Application Programming Interfaces, web development languages and cross platform mobile suites.</p>
+
+<ul>
+  <li>
+        <style>
+@import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
+
+*{
+  margin :0;
+  padding:0;
+}
+
+.body {
+  margin-top:8%;
+    justify-content: center;
+    align-items: center;
+    background-color: #1d287e;
+    height: 400px;
+    display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-family: sans-serif;
+  overflow: hidden;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+
+}
+
+.flip-card-inner {
+  position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #f6fb30;
+  color: black;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.flip-card-back {
+  display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+    background-color: #f6fb30;
+    color: #9932cc;
+    transform: rotateY(180deg);
+}
+</style>
+<div class="body">
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <h1>NAME, PHOTO</h1>
+      <p>hover here</p>
+    </div>
+    <div class="flip-card-back">
+      <h1> NITW </h1>
+      <p>Bachelor Of Technology - BTECH,Computer Science Engineering</p>
+      <p style="color:blue">MOBILE DEVELOPER</p>
+      <h3>CONTACT</h3>
+      <p><a href="https://www.Linkedin">Linkedin Profile</a></p>
+      <p><a href="https://www.email">Email</a></p>
+      <button class="btn btn-primary">Experience and Projects</button>
+    </div>
+  </div>
+</div>
+</div>
+  </li>
+  <li>    <style>
+@import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
+
+*{
+  margin :0;
+  padding:0;
+}
+
+.body {
+  margin-top:8%;
+    justify-content: center;
+    align-items: center;
+    background-color: #1d287e;
+    height: 400px;
+    display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-family: sans-serif;
+  overflow: hidden;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+
+}
+
+.flip-card-inner {
+  position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #f6fb30;
+  color: black;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.flip-card-back {
+  display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+    background-color: #f6fb30;
+    color: #9932cc;
+    transform: rotateY(180deg);
+}
+</style>
+<div class="body">
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <h1>NAME, PHOTO</h1>
+      <p>hover here</p>
+    </div>
+    <div class="flip-card-back">
+      <h1> NITW </h1>
+      <p>Bachelor Of Technology - BTECH,Computer Science Engineering</p>
+      <p style="color:blue">MOBILE DEVELOPER</p>
+      <h3>CONTACT</h3>
+      <p><a href="https://www.Linkedin">Linkedin Profile</a></p>
+      <p><a href="https://www.email">Email</a></p>
+      <button class="btn btn-primary">Experience and Projects</button>
+    </div>
+  </div>
+</div>
+</div></li>
+  <li>
+        <style>
+@import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
+
+*{
+  margin :0;
+  padding:0;
+}
+
+.body {
+  margin-top:8%;
+    justify-content: center;
+    align-items: center;
+    background-color: #1d287e;
+    height: 400px;
+    display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-family: sans-serif;
+  overflow: hidden;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+
+}
+
+.flip-card-inner {
+  position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #f6fb30;
+  color: black;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.flip-card-back {
+  display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+    background-color: #f6fb30;
+    color: #9932cc;
+    transform: rotateY(180deg);
+}
+</style>
+<div class="body">
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <h1>NAME, PHOTO</h1>
+      <p>hover here</p>
+    </div>
+    <div class="flip-card-back">
+      <h1> NITW </h1>
+      <p>Bachelor Of Technology - BTECH,Computer Science Engineering</p>
+      <p style="color:blue">MOBILE DEVELOPER</p>
+      <h3>CONTACT</h3>
+      <p><a href="https://www.Linkedin">Linkedin Profile</a></p>
+      <p><a href="https://www.email">Email</a></p>
+      <button class="btn btn-primary">Experience and Projects</button>
+    </div>
+  </div>
+</div>
+</div>
+  </li>
+</ul>  
+</div>
+
+<div id="4" style="display: none;">
+  <h1 style="color:white;text-align: center;">Game Developers</h1> <br> <br>
+ <p style="color:white";class="ex1" style="text-align:center">Being a game developer is very demanding and complicated. They specialise in writing games and have specific knowledge and skills in designing engaging interactive gaming experiences. Game developers use frameworks such as DirectX, OpenGL, Unity 3D, WebGL and programming languages such as C, C++ and Java. On mobile devices, Swift and Java are used for iOS and Android games.
+
+</p>
+
+
+<ul>
+  <li>
+    <style>
+@import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
+
+*{
+  margin :0;
+  padding:0;
+}
+
+.body {
+  margin-top:8%;
+    justify-content: center;
+    align-items: center;
+    background-color: #1d287e;
+    height: 400px;
+    display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-family: sans-serif;
+  overflow: hidden;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+
+}
+
+.flip-card-inner {
+  position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #f6fb30;
+  color: black;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.flip-card-back {
+  display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+    background-color: #f6fb30;
+    color: #9932cc;
+    transform: rotateY(180deg);
+}
+</style>
+<div class="body">
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <h1>NAME, PHOTO</h1>
+      <p>hover here</p>
+    </div>
+    <div class="flip-card-back">
+      <h1> NITW </h1>
+      <p>Bachelor Of Technology - BTECH,Computer Science Engineering</p>
+      <p style="color:blue">GAME DEVELOPER</p>
+      <h3>CONTACT</h3>
+      <p><a href="https://www.Linkedin">Linkedin Profile</a></p>
+      <p><a href="https://www.email">Email</a></p>
+      <button class="btn btn-primary">Experience and Projects</button>
+    </div>
+  </div>
+</div>
+</div>
+  </li>
+  <li>
+    <style>
+@import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
+
+*{
+  margin :0;
+  padding:0;
+}
+
+.body {
+  margin-top:8%;
+    justify-content: center;
+    align-items: center;
+    background-color: #1d287e;
+    height: 400px;
+    display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-family: sans-serif;
+  overflow: hidden;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+
+}
+
+.flip-card-inner {
+  position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #f6fb30;
+  color: black;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.flip-card-back {
+  display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+    background-color: #f6fb30;
+    color: #9932cc;
+    transform: rotateY(180deg);
+}
+</style>
+<div class="body">
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <h1>NAME, PHOTO</h1>
+      <p>hover here</p>
+    </div>
+    <div class="flip-card-back">
+      <h1> NITW </h1>
+      <p>Bachelor Of Technology - BTECH,Computer Science Engineering</p>
+      <p style="color:blue">GAME DEVELOPER</p>
+      <h3>CONTACT</h3>
+      <p><a href="https://www.Linkedin">Linkedin Profile</a></p>
+      <p><a href="https://www.email">Email</a></p>
+      <button class="btn btn-primary">Experience and Projects</button>
+    </div>
+  </div>
+</div>
+</div>
+  </li>
+  <li>
+    <style>
+@import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
+
+*{
+  margin :0;
+  padding:0;
+}
+
+.body {
+  margin-top:8%;
+    justify-content: center;
+    align-items: center;
+    background-color: #1d287e;
+    height: 400px;
+    display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-family: sans-serif;
+  overflow: hidden;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+
+}
+
+.flip-card-inner {
+  position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #f6fb30;
+  color: black;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.flip-card-back {
+  display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+    background-color: #f6fb30;
+    color: #9932cc;
+    transform: rotateY(180deg);
+}
+</style>
+<div class="body">
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <h1>NAME, PHOTO</h1>
+      <p>hover here</p>
+    </div>
+    <div class="flip-card-back">
+      <h1> NITW </h1>
+      <p>Bachelor Of Technology - BTECH,Computer Science Engineering</p>
+      <p style="color:blue">GAME DEVELOPER</p>
+      <h3>CONTACT</h3>
+      <p><a href="https://www.Linkedin">Linkedin Profile</a></p>
+      <p><a href="https://www.email">Email</a></p>
+      <button class="btn btn-primary">Experience and Projects</button>
+    </div>
+  </div>
+</div>
+</div>
+  </li>
+</ul>  
+</div>
+
+<div id="5" style="display: none;">
+  <h1 style="color:white;text-align: center";>Data Scientist Developers</h1> <br> <br>
+ <p style="color:white";class="ex1" style="text-align:center">Data scientist developers write programs to analyse data sets. They are normally in charge of statistical analysis, machine learning and predictive modelling. The skill set a data scientist should have, would need to cover several science related things. For example, programming languages (R, Python), different techniques that are a valid approach, being familiar with machine learning methods, understand and know multivariable calculus and linear algebra and deal with imperfections in data. Being able to communicate all imperfections and calculus is incredibly important for these types of developers.</p>
+
+
+<ul>
+  
+  <li>
+    <style>
+@import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
+
+*{
+  margin :0;
+  padding:0;
+}
+
+.body {
+  margin-top:8%;
+    justify-content: center;
+    align-items: center;
+    background-color: #1d287e;
+    height: 400px;
+    display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-family: sans-serif;
+  overflow: hidden;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+
+}
+
+.flip-card-inner {
+  position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #f6fb30;
+  color: black;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.flip-card-back {
+  display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+    background-color: #f6fb30;
+    color: #9932cc;
+    transform: rotateY(180deg);
+}
+</style>
+<div class="body">
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <h1>NAME, PHOTO</h1>
+      <p>hover here</p>
+    </div>
+    <div class="flip-card-back">
+      <h1> NITW </h1>
+      <p>Bachelor Of Technology - BTECH,Computer Science Engineering</p>
+      <p style="color:blue">DATA SCIENTIST DEVELOPER</p>
+      <h3>CONTACT</h3>
+      <p><a href="https://www.Linkedin">Linkedin Profile</a></p>
+      <p><a href="https://www.email">Email</a></p>
+      <button class="btn btn-primary">Experience and Projects</button>
+    </div>
+  </div>
+</div>
+</div>
+  </li>
+  <li>
+    <style>
+@import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
+
+*{
+  margin :0;
+  padding:0;
+}
+
+.body {
+  margin-top:8%;
+    justify-content: center;
+    align-items: center;
+    background-color: #1d287e;
+    height: 400px;
+    display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-family: sans-serif;
+  overflow: hidden;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+
+}
+
+.flip-card-inner {
+  position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #f6fb30;
+  color: black;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.flip-card-back {
+  display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+    background-color: #f6fb30;
+    color: #9932cc;
+    transform: rotateY(180deg);
+}
+</style>
+<div class="body">
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <h1>NAME, PHOTO</h1>
+      <p>hover here</p>
+    </div>
+    <div class="flip-card-back">
+      <h1> NITW </h1>
+      <p>Bachelor Of Technology - BTECH,Computer Science Engineering</p>
+      <p style="color:blue">DATA SCIENTIST DEVELOPER</p>
+      <h3>CONTACT</h3>
+      <p><a href="https://www.Linkedin">Linkedin Profile</a></p>
+      <p><a href="https://www.email">Email</a></p>
+      <button class="btn btn-primary">Experience and Projects</button>
+    </div>
+  </div>
+</div>
+</div>
+  </li>
+  <li>
+    <style>
+@import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
+
+*{
+  margin :0;
+  padding:0;
+}
+
+.body {
+  margin-top:8%;
+    justify-content: center;
+    align-items: center;
+    background-color: #1d287e;
+    height: 400px;
+    display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-family: sans-serif;
+  overflow: hidden;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+
+}
+
+.flip-card-inner {
+  position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #f6fb30;
+  color: black;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.flip-card-back {
+  display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+    background-color: #f6fb30;
+    color: #9932cc;
+    transform: rotateY(180deg);
+}
+</style>
+<div class="body">
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <h1>NAME, PHOTO</h1>
+      <p>hover here</p>
+    </div>
+    <div class="flip-card-back">
+      <h1> NITW </h1>
+      <p>Bachelor Of Technology - BTECH,Computer Science Engineering</p>
+      <p style="color:blue">DATA SCIENTIST DEVELOPER</p>
+      <h3>CONTACT</h3>
+      <p><a href="https://www.Linkedin">Linkedin Profile</a></p>
+      <p><a href="https://www.email">Email</a></p>
+      <button class="btn btn-primary">Experience and Projects</button>
+    </div>
+  </div>
+</div>
+</div>
+  </li>
+</ul>  
+</div>
+
+<div id="6" style="display: none;">
+  <h1 style="color:white;text-align: center";>Security Developers</h1> <br> <br>
+ <p style="color:white";class="ex1" style="text-align:center">Security developers specialise in creating systems, methods and procedures to test the security of software systems and fix security flaws. They use a variety of tools to complete their job such as scripting languages like Python and Ruby. They also use coding languages such as C and C++ to read and understand operating systems. The aim of their job is to ethically hack systems to discover their vulnerabilities.</p>
+
+<ul>
+  <li>
+    <style>
+@import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
+
+*{
+  margin :0;
+  padding:0;
+}
+
+.body {
+  margin-top:8%;
+    justify-content: center;
+    align-items: center;
+    background-color: #1d287e;
+    height: 400px;
+    display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-family: sans-serif;
+  overflow: hidden;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+
+}
+
+.flip-card-inner {
+  position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #f6fb30;
+  color: black;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.flip-card-back {
+  display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+    background-color: #f6fb30;
+    color: #9932cc;
+    transform: rotateY(180deg);
+}
+</style>
+<div class="body">
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <h1>NAME, PHOTO</h1>
+      <p>hover here</p>
+    </div>
+    <div class="flip-card-back">
+      <h1> NITW </h1>
+      <p>Bachelor Of Technology - BTECH,Computer Science Engineering</p>
+      <p style="color:blue">SECURITY DEVELOPER</p>
+      <h3>CONTACT</h3>
+      <p><a href="https://www.Linkedin">Linkedin Profile</a></p>
+      <p><a href="https://www.email">Email</a></p>
+      <button class="btn btn-primary">Experience and Projects</button>
+    </div>
+  </div>
+</div>
+</div>
+  </li>
+  <li>
+    <style>
+@import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
+
+*{
+  margin :0;
+  padding:0;
+}
+
+.body {
+  margin-top:8%;
+    justify-content: center;
+    align-items: center;
+    background-color: #1d287e;
+    height: 400px;
+    display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-family: sans-serif;
+  overflow: hidden;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+
+}
+
+.flip-card-inner {
+  position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #f6fb30;
+  color: black;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.flip-card-back {
+  display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+    background-color: #f6fb30;
+    color: #9932cc;
+    transform: rotateY(180deg);
+}
+</style>
+<div class="body">
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <h1>NAME, PHOTO</h1>
+      <p>hover here</p>
+    </div>
+    <div class="flip-card-back">
+      <h1> NITW </h1>
+      <p>Bachelor Of Technology - BTECH,Computer Science Engineering</p>
+      <p style="color:blue">SECURITY DEVELOPER</p>
+      <h3>CONTACT</h3>
+      <p><a href="https://www.Linkedin">Linkedin Profile</a></p>
+      <p><a href="https://www.email">Email</a></p>
+      <button class="btn btn-primary">Experience and Projects</button>
+    </div>
+  </div>
+</div>
+</div>
+  </li>
+  <li>
+    <style>
+@import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
+
+*{
+  margin :0;
+  padding:0;
+}
+
+.body {
+  margin-top:8%;
+    justify-content: center;
+    align-items: center;
+    background-color: #1d287e;
+    height: 400px;
+    display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-family: sans-serif;
+  overflow: hidden;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+
+}
+
+.flip-card-inner {
+  position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #f6fb30;
+  color: black;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.flip-card-back {
+  display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+    background-color: #f6fb30;
+    color: #9932cc;
+    transform: rotateY(180deg);
+}
+</style>
+<div class="body">
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <h1>NAME, PHOTO</h1>
+      <p>hover here</p>
+    </div>
+    <div class="flip-card-back">
+      <h1> NITW </h1>
+      <p>Bachelor Of Technology - BTECH,Computer Science Engineering</p>
+      <p style="color:blue">SECURITY DEVELOPER</p>
+      <h3>CONTACT</h3>
+      <p><a href="https://www.Linkedin">Linkedin Profile</a></p>
+      <p><a href="https://www.email">Email</a></p>
+      <button class="btn btn-primary">Experience and Projects</button>
+    </div>
+  </div>
+</div>
+</div>
+  </li>
+</ul>  
+</div>
+
+
+
+<script type="text/javascript">
+    document.getElementById("developers").onchange = function(){
+        document.getElementById("1").style.display="none";
+        document.getElementById("2").style.display="none";
+        document.getElementById("3").style.display="none";
+        document.getElementById("4").style.display="none";
+        document.getElementById("5").style.display="none";
+        document.getElementById("6").style.display="none";
+
+       var value = document.getElementById("developers").value;
+       document.getElementById(value).style.display="block";
+    };
+   </script>
+
+
+
+<div class="footer">
+Team 16. Plutonic
+<br>
+<a href="mailto:mr942051@student.nitw.ac.in" target="_blank" style="color: red;"><img src="Gmail.png"></a> | 
+        <a href="https://www.facebook.com/profile.php?id=100008695213597" target="_blank" style="color:red;"><img src="facebook.png"></a> | 
+        <a href="#" target="_blank" style="color: red;"><img src="twitter.png"></a>
+</div>
+
+
+</body> 
+</html>
+
